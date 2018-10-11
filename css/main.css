@@ -659,6 +659,11 @@ body {
   box-sizing: border-box;
   margin-top: -15px;
 }
+.social-icons-size {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
 .social-icons__icon__icon-1 {
   float: left;
   width: 30px;
@@ -971,7 +976,6 @@ body {
     padding-top: 11px;
     text-transform: uppercase;
     text-decoration: none;
-    margin-bottom: 20px;
   }
   .product-purchase__icon-up {
     height: 24px;
