@@ -1,0 +1,349 @@
+// colors
+@white: #ffffff;
+@black: #131313;
+@blue: #4492ec;
+@dark-blue: #006be5;
+@gray: #d9d9d9;
+@light-gray: #f4f4f4;
+
+
+/* block layout */
+.layout {
+    height: 587px;
+    width: auto;
+
+}
+// product-image
+.product-image {
+    height: 100%;
+    width: 49%;
+    float: left;
+}
+
+.product-image__content {
+    display: flex;
+}
+
+.product-previous {
+    // height: 450px;
+    height: 100%;
+    // width: 90px;
+    width: 15%;
+    float: left;
+    // margin-left: 90px;
+    margin-left: 16%;
+    position: relative;
+}
+
+// product-description
+.product-description {
+    height: 100%;
+    width: 49%;
+    float: left;
+}
+.product-description__content {
+    margin-left: 8.5%;
+}
+
+// product-catalog
+.product-catalog, .product-catalog-mobile {
+    display: none;
+}
+
+// product-name
+.product-name {
+    margin-top: 68px;
+    font-family: "Circe-bold";
+    font-style: bold;
+}
+
+.product-name__name {
+    font-size: 24px;
+    color: @black;
+    font-style: bold;
+    text-transform: uppercase;
+    line-height: 1;
+}
+//
+// .product-name__links {
+//     height: 44px;
+//     font-size: 13px;
+//     font-family: "Circe";
+// }
+// .product-name__links ul {
+//     list-style: none;
+//     margin: 0;
+//     padding-left: 0;
+// }
+//
+// .product-name__links ul li {
+//     display: inline-block;
+//     padding-right: 20px;
+//     padding-top: 17px;
+// }
+//
+// .product-name__links ul li a {
+//     text-decoration: none;
+//     display: block;
+//     color: @blue;
+// }
+//
+
+
+.product-name__links {
+    height: 44px;
+    font-size: 13px;
+    font-family: "Circe";
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            padding-right: 20px;
+            padding-top: 17px;
+
+            a {
+                text-decoration: none;
+                display: block;
+                color: @blue;
+            }
+        }
+    }
+}
+
+// product-price
+.product-price {
+    padding-top: 20px;
+    height: 52px;
+    text-align: center;
+    font-family: "Circe-medium";
+    font-size: 18px;
+}
+
+.product-price__old {
+    float: left;
+    color: @light-gray;
+    text-decoration: line-through;
+}
+
+.product-price__current {
+    float: left;
+    padding-left: 5px;
+    color: @gray;
+}
+
+.product-price__promo {
+    float: left;
+    padding-left: 35px;
+    color: @black;
+}
+
+.product-price__promo span {
+    font-family: "Circe";
+}
+
+// product-availability
+.product-availability {
+    height: 65px;
+    width: 320px;
+    // width: 55%;
+    background: @light-gray;
+    font-family: "Circe";
+    font-size: 13px;
+    padding-left: 18px;
+}
+
+.product-availability__shop {
+    float: left;
+    margin-top: 15px;
+    height: 15px;
+    width: 100%;
+}
+.product-availability__shop__icon {
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon-done.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+}
+
+.product-availability__shop__text {
+    display: inline-block;
+    height: 15px;
+    margin-left: 12px;
+
+    a {
+        text-decoration: none;
+        color: @blue;
+    }
+}
+
+// .product-availability__shop__text a {
+//     text-decoration: none;
+//     color: @blue;
+// }
+
+.product-availability__delivery {
+    float: left;
+    margin-top: 8px;
+}
+
+.product-availability__delivery__icon {
+    width: 15px;
+    height: 15px;
+    background-image: url(../img/icon-delivery.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+}
+
+.product-availability__delivery__text {
+    display: inline-block;
+    height: 15px;
+    margin-left: 12px;
+}
+
+// product-full-description-mobile
+.product-full-description-mobile {
+    display: none;
+}
+
+// product-purchase
+.product-purchase {
+    // margin-left: 55px;
+    margin-top: 60px;
+    height: 40px;
+    // width: 500px;
+    width: 80%;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Circe-medium";
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-purchase__shop {
+    float: left;
+    // width: 240px;
+    width: 48%;
+    height: 28px;
+    background: @dark-blue;
+    color: @white;
+    padding-top: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-purchase__favorite {
+    float: left;
+    // width: 240px;
+    width: 48%;
+    height: 40px;
+    // margin-left: 20px;
+    margin-left: 4%;
+    background: @white;
+    color: @black;
+    box-sizing: border-box;
+    border-color: @gray;
+    border-style: solid;
+    border-width: 2px;
+    padding-top: 11px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+// product-full-description
+.product-full-description {
+    margin-top: 40px;
+    font-size: 13px;
+    font-family: "Circe";
+}
+
+// product-more
+.product-more {
+    display: none;
+}
+
+.product-more__text {
+    font-size: 13px;
+    font-family: "Circe-bold";
+}
+.product-more__icon {
+
+}
+
+// social-icons
+.social-icons {
+    height: 30px;
+    margin-top: 40px;
+}
+
+.social-icons__text {
+    float: left;
+    font-size: 13px;
+    font-family: "Circe";
+    color: @black;
+    text-transform: uppercase;
+    padding-top: 10px;
+    margin-right: 15px;
+
+}
+.social-icons__icon {
+    float: left;
+    height: 30px;
+    box-sizing: border-box;
+    margin-top: -15px;
+}
+
+.social-icons-size {
+    float: left;
+    width: 30px;
+    height: 30px;
+}
+.social-icons__icon__icon-1 {
+    .social-icons-size
+    background-image: url(../img/icon-1.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.social-icons__icon__icon-2 {
+    .social-icons-size
+    background-image: url(../img/icon-2.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.social-icons__icon__icon-3 {
+    .social-icons-size
+    background-image: url(../img/icon-3.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.social-icons__icon__icon-4 {
+    .social-icons-size
+    background-image: url(../img/icon-4.png);
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.social-icons__shared {
+    float: left;
+    width: 45px;
+    height: 30px;
+    background-image: url(../img/icon-shared.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.social-icons__shared span {
+    font-size: 13px;
+    font-family: "Circe";
+    color: @black;
+    text-transform: uppercase;
+    line-height: 1.846;
+}
